@@ -40,6 +40,7 @@ body {
     height: auto;
     padding: 10px 20px;
     z-index: 1;
+    border-bottom: 2px solid #F6FEFF;
 }
 
 .container-navbar .navbar .logo {
@@ -121,7 +122,7 @@ body {
     }
     
     #ul-navbar.show {
-        top: 87px;
+        top: 90px;
         transition: 1s ease;
         display: flex;
     }
