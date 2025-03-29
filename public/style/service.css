@@ -1,0 +1,180 @@
+/* Start Overview */
+.container-overview {
+    width: 100%;
+    height: auto;
+    row-gap: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-overview .welcoming-word {
+    width: 100%;
+    height: auto;
+    min-width: 270px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.container-overview .welcoming-word .title {
+    font-family: 'Inter-Bold', sans-serif;
+    font-size: 26px;
+    color: #073145;
+}
+
+.container-overview .welcoming-word .description {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.container-overview .welcoming-word .description p {
+    color: #073145;
+    margin-bottom: 0px;
+}
+
+.container-overview .img-preview {
+    width: 43%;
+    height: 361px;
+    min-width: 270px;
+}
+
+.container-overview .img-preview img {
+    width: 100%;
+    height: 100%;
+}
+/* End Overview */
+
+/* Start Service */
+.container-services {
+    width: 100%;
+    height: auto;
+    display: flex;
+    row-gap: 100px;
+}
+
+.container-services .service {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.container-services .service h1 {
+    font-family: 'Inter-Bold', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    color: #073145;
+}
+
+.container-services .service .service-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+    box-shadow: 6px 6px 12px #a2a6ae;
+    border-radius: 8px;
+    padding: 7px 12px;
+}
+
+.container-services .service .service-wrapper .title-service {
+    font-family: 'Inter-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #06A3DA;
+}
+
+.container-services .service .service-wrapper .img-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 13px;
+}
+
+.container-services .service .service-wrapper .img-wrapper .img-service {
+    width: 24%;
+    height: 292px;
+}
+
+.container-services .service .service-wrapper .img-wrapper .img-service img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.container-services .service .service-wrapper .description-wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.container-services .service .service-wrapper .description-wrapper .description {
+    width: 100%;
+    height: auto;
+}
+
+.container-services .service .service-wrapper .description-wrapper .description p {
+    color: #073145;
+    margin-bottom: 0px;
+}
+
+.container-services .service .service-wrapper .description-wrapper .description .range-price {
+    font-size: 20px;
+}
+
+.container-services .service .service-wrapper .description-wrapper .btn-detail-price {
+    width: 189px;
+    height: auto;
+    background-color: #06A3DA;
+    padding: 8px 0px;
+    text-align: center;
+    text-decoration: none;
+    color: #073145;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: .2s ease-in-out;
+}
+
+.container-services .service .service-wrapper .description-wrapper .btn-detail-price:hover {
+    box-shadow: 0px 0px 7px #061429;
+    transition: .2s ease-in-out;
+}
+/* End Service */
+
+@media screen and (max-width: 930px) {
+    /* Start Overview */
+    .container-overview {
+        flex-direction: column;
+    }
+    
+    .container-overview .img-preview {
+        width: 100%;
+    }
+    /* End Overview */
+
+    /* Start Service */
+    .container-services .service .service-wrapper .img-wrapper .img-service {
+        height: 172px;
+    }
+    /* End Service */
+}
+
+@media screen and (max-width: 655px) {
+    /* Start Service */
+    .container-services .service .service-wrapper .img-wrapper {
+        flex-direction: column;
+    }
+
+    .container-services .service .service-wrapper .img-wrapper .img-service {
+        width: 100%;
+    }
+
+    .container-services .service .service-wrapper .description-wrapper .btn-detail-price {
+        width: 199px;
+    }
+    /* End Service */
+}
