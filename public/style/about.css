@@ -1,0 +1,351 @@
+/* Start Overview */
+.container-overview {
+    width: 100%;
+    height: auto;
+    row-gap: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-overview .welcoming-word {
+    width: 100%;
+    height: auto;
+    min-width: 270px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.container-overview .welcoming-word .title {
+    font-family: 'Inter-Bold', sans-serif;
+    font-size: 26px;
+    color: #073145;
+}
+
+.container-overview .welcoming-word .description {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.container-overview .welcoming-word .description p {
+    color: #073145;
+    margin-bottom: 0px;
+}
+
+.container-overview .welcoming-word .description .btn-checkout {
+    width: 239px;
+    height: auto;
+    background-color: #06A3DA;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    color: #073145;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: .2s ease-in-out;
+}
+
+.container-overview .welcoming-word .description .btn-checkout:hover {
+    box-shadow: 0px 0px 7px #061429;
+    transition: .2s ease-in-out;
+}
+
+.container-overview .welcoming-word .description .btn-checkout img {
+    margin-right: 8px;
+}
+
+.container-overview .img-preview {
+    width: 43%;
+    height: 450px;
+    min-width: 270px;
+}
+
+.container-overview .img-preview img {
+    width: 100%;
+    height: 100%;
+}
+/* End Overview */
+
+/* Start Operating Hours */
+.container-operating-hours {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.container-operating-hours .operational-day-wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 13px;
+}
+
+.container-operating-hours .operational-day-wrapper .operational-day {
+    width: auto;
+}
+
+.container-operating-hours .operational-day-wrapper .operational-day h1 {
+    font-family: 'Inter-Bold', sans-serif;
+    font-size: 26px;
+    color: #073145;
+    margin-bottom: 0px;
+}
+
+.container-operating-hours .operational-day-wrapper .operational-day .except {
+    color: #06A3DA;
+    font-size: 20px;
+}
+
+.container-operating-hours .operating-hours {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    box-shadow: 6px 6px 12px #a2a6ae;
+    border-radius: 8px;
+    padding: 7px 15px;
+    gap: 13px;
+}
+
+.container-operating-hours .operating-hours .hours-wrapper {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.container-operating-hours .operating-hours .long-arrow {
+    width: 80%;
+}
+.container-operating-hours .operating-hours .sort-arrow {
+    display: none;
+}
+
+.container-operating-hours .operating-hours .hours-wrapper img {
+    width: 65%;
+}
+
+.container-operating-hours .operating-hours .hours-wrapper p {
+    margin-bottom: 0px;
+    color: #073145;
+    text-align: center;
+}
+
+.container-operating-hours .operating-hours .hours-wrapper .hours {
+    font-family: 'Inter-Bold', sans-serif;
+}
+/* End Operating Hours */
+
+/* Start Advantages */
+.container-advantages {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.container-advantages h1 {
+    font-family: 'Inter-Bold', sans-serif;
+    font-size: 26px;
+    margin-bottom: 0px;
+}
+
+.container-advantages .advantage-wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 7px;
+}
+
+.container-advantages .advantage-wrapper span {
+    color: #06A3DA;
+}
+
+.container-advantages .advantage-wrapper .advantage {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.container-advantages .advantage-wrapper .advantage .content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 25px;
+    gap: 8px;
+    box-shadow: 6px 6px 12px #a2a6ae;
+    border-radius: 8px;
+}
+
+.container-advantages .advantage-wrapper .advantage .content p, a {
+    margin-bottom: 0px;
+    color: #061429;
+}
+/* End Advantages */
+
+/* Start Location */
+.container-location {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.container-location .title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+}
+
+.container-location .title img {
+    width: 20px;
+}
+
+.container-location .title h1 {
+    margin-bottom: 0px;
+    font-family: 'Inter-Bold', sans-serif;
+    font-size: 26px;
+    color: #061429;
+}
+
+
+.container-location .location-wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.container-location .location-wrapper .location {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* border: 2px solid yellow; */
+}
+
+.container-location .location-wrapper .location p, a {
+    margin-bottom: 0px;
+    color: #061429;
+}
+
+.container-location .location-wrapper .location .whatsapp {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.container-location .location-wrapper .location .whatsapp .btn-whatsapp {
+    width: 239px;
+    height: auto;
+    background-color: #06A3DA;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    color: #073145;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: .2s ease-in-out;
+}
+
+.container-location .location-wrapper .location .btn-whatsapp:hover {
+    box-shadow: 0px 0px 7px #061429;
+    transition: .2s ease-in-out;
+}
+
+.container-location .location-wrapper .location .btn-whatsapp img {
+    margin-right: 8px;
+}
+
+.container-location .location-wrapper .maps {
+    width: 100%;
+    height: auto;
+    /* border: 2px solid red; */
+}
+
+.container-location .location-wrapper .maps iframe {
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+}
+/* End Location */
+
+@media screen and (max-width: 930px) {
+    /* Start Overview */
+    .container-overview {
+        flex-direction: column;
+    }
+    
+    .container-overview .img-preview {
+        width: 100%;
+    }
+    /* End Overview */
+
+    /* Start Advantage */
+    .container-advantages .advantage-wrapper {
+        flex-direction: column;
+    }
+    /* End Advantage */
+
+    /* Start Location */
+    .container-location .location-wrapper {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    /* End Location */
+}
+
+@media screen and (max-width: 655px) {
+    /* Start Overview */
+    .container-overview .welcoming-word .description .btn-checkout {
+        width: 199px;
+    }
+    /* End Overview */
+
+     /* Start Operating Hours */
+    .container-operating-hours .operating-hours .hours-wrapper img {
+        width: 50%;
+    }
+
+    .container-operating-hours .operating-hours .long-arrow {
+        display: none;
+        width: 80%;
+    }
+    .container-operating-hours .operating-hours .sort-arrow {
+        width: 25%;
+        display: block;
+    }
+    /* End Operating Hours */
+
+    /* Start Location */
+    .container-location .location-wrapper .location .whatsapp .btn-whatsapp {
+        width: 199px;
+    }
+    /* End Location */
+}

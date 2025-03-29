@@ -1,30 +1,6 @@
-@font-face {
-    font-family: 'Inter';
-    src: url(../inter/static/Inter_18pt-Regular.ttf),
-        url(../inter/static/Inter_24pt-Regular.ttf),
-        url(../inter/static/Inter_28pt-Regular.ttf);
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Inter-Bold';
-    src: url(../inter/static/Inter_18pt-Bold.ttf),
-        url(../inter/static/Inter_24pt-Bold.ttf),
-        url(../inter/static/Inter_28pt-Bold.ttf);
-    font-weight: normal;
-    font-style: bold;
-}
-
-body {
-    background-color: #F6FEFF;
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Inter', sans-serif;
-}
-
+/* Start Navbar Section */
 .container-navbar {
-    width: auto;
+    width: auto; /*width default akan mengikuti setiap ukuran layar*/
     height: 100vh;
     max-height: 1117px;
     padding: 0px;
@@ -32,7 +8,7 @@ body {
 
 .container-navbar .navbar {
     position: fixed;
-    width: 100%;
+    width: 100%; /*width yang akan memenuhi ukuran container pembungkusnya*/
     min-width: 270px;
     display: flex;
     align-content: center;
@@ -50,7 +26,7 @@ body {
 
 .container-navbar .navbar .ul {
     height: 100%;
-    width: auto;
+    width: auto; /*width yang juga dapat mengikuti ukuran didalamnya*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,6 +45,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 2px;
+    text-decoration: none;
 }
 
 .container-navbar .navbar .ul .active {
@@ -102,8 +79,221 @@ body {
     width: 100%;
     height: 100%;
 }
+/* End Navbar Section */
 
-@media screen and (max-width: 710px) {
+
+/* Start Container Body Section */
+.container-body {
+    padding: 0px 65px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+/* Start Overview */
+.container-overview {
+    width: 100%;
+    height: auto;
+    row-gap: 25px;
+    /* display: grid;
+    grid-template-columns: 70% auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-overview .welcoming-word {
+    width: 100%;
+    height: auto;
+    min-width: 270px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.container-overview .welcoming-word .title {
+    font-family: 'Inter-Bold', sans-serif;
+    font-size: 26px;
+    color: #073145;
+}
+
+.container-overview .welcoming-word .description {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.container-overview .welcoming-word .description p {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #073145;
+    margin-bottom: 0px;
+}
+
+.container-overview .welcoming-word .description .btn-checkout {
+    width: 239px;
+    height: auto;
+    background-color: #06A3DA;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    color: #073145;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: .2s ease-in-out;
+}
+
+.container-overview .welcoming-word .description .btn-checkout:hover {
+    box-shadow: 0px 0px 7px #061429;
+    transition: .2s ease-in-out;
+}
+
+.container-overview .welcoming-word .description .btn-checkout img {
+    margin-right: 8px;
+}
+
+.container-overview .img-preview {
+    width: 43%;
+    height: 450px;
+    min-width: 270px;
+}
+
+.container-overview .img-preview img {
+    width: 100%;
+    height: 100%;
+}
+/* End Overview */
+
+/* Start Service */
+.container-service {
+    width: 100%;
+    height: auto;
+    min-width: 270px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 25px;
+}
+
+.container-service .title-wrapper {
+    width: 100%;
+} 
+
+.container-service .title {
+    font-family: 'Inter-Bold', sans-serif;
+    font-size: 26px;
+    color: #073145;
+}
+
+.container-service .service-list {
+    width: 100%;
+    height: auto;
+    min-width: 270px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.container-service .service-list .service {
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 13px;
+    padding: 12px 20px;
+    box-shadow: 6px 6px 12px #a2a6ae;
+    border-radius: 8px;
+    transition: .6s ease;
+}
+
+.container-service .service-list .service:hover {
+    background-color: #061429;
+    transition: .6s ease;
+}
+
+.container-service .service-list .service:hover p {
+    color: #F6FEFF;
+    transition: .6s ease;
+}
+
+.container-service .service-list .service p {
+    margin-bottom: 0px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    color: #061429;
+}
+
+.container-service .service-list .service .service-title {
+    font-family: 'Inter-Bold', sans-serif;
+    font-size: 18px;
+}
+/* End Service */
+
+/* Start Advantages */
+.container-advantages {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.container-advantages h1 {
+    font-family: 'Inter-Bold', sans-serif;
+    font-size: 26px;
+    margin-bottom: 0px;
+}
+
+.container-advantages .advantage-wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 7px;
+}
+
+.container-advantages .advantage-wrapper span {
+    color: #06A3DA;
+}
+
+.container-advantages .advantage-wrapper .advantage {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.container-advantages .advantage-wrapper .advantage .content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 25px;
+    gap: 8px;
+    box-shadow: 6px 6px 12px #a2a6ae;
+    border-radius: 8px;
+}
+
+.container-advantages .advantage-wrapper .advantage .content p, a {
+    margin-bottom: 0px;
+    color: #061429;
+}
+/* End Advantages */
+
+/* @media screen and (max-width: 710px) { */
+@media screen and (max-width: 930px) {
+    /* Start Navbar Section */
+    .container-navbar .navbar .logo {
+        width: 160px;
+        height: 47px;
+    }
+
     .container-navbar .navbar .ul {
         width: 100%;
         height: auto;
@@ -117,7 +307,6 @@ body {
     }
     
     #ul-navbar {
-        /* display: none; */
         transition: 1s ease;
     }
     
@@ -143,4 +332,38 @@ body {
     .container-navbar .navbar .hamburger {
         display: block;
     }
+    /* End Navbar Section */
+
+
+    /* Start Container Body Section */
+    .container-body {
+        padding: 0px 33px;
+    }
+    /* Start Overview */
+    .container-overview {
+        flex-direction: column;
+    }
+
+    .container-overview .img-preview {
+        width: 100%;
+    }
+    /* End Overview */
+
+    /* Start Service */
+    .container-service {
+        flex-direction: column;
+    }
+
+    .container-service .service-list .service {
+        width: 100%;
+    }
+    /* End Service */
+
+    /* Start Advantages */
+    .container-advantages .advantage-wrapper {
+        flex-direction: column;
+    }
+    /* End Advantages */
+
+    /* End Container Body Section */
 }

@@ -1,0 +1,139 @@
+/* Start Navbar Section */
+.container-navbar {
+    width: auto; /*width default akan mengikuti setiap ukuran layar*/
+    height: 475px;
+    max-height: 1117px;
+    padding: 0px;
+    position: relative;
+}
+
+.container-navbar .navbar {
+    position: fixed;
+    width: 100%; /*width yang akan memenuhi ukuran container pembungkusnya*/
+    min-width: 270px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    height: auto;
+    padding: 10px 20px;
+    z-index: 1;
+    border-bottom: 2px solid #F6FEFF;
+}
+
+.container-navbar .navbar .logo {
+    width: 180px;
+    height: 67px;
+}
+
+.container-navbar .navbar .ul {
+    height: 100%;
+    width: auto; /*width yang juga dapat mengikuti ukuran didalamnya*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 36px;
+}
+
+.container-navbar .navbar .hamburger {
+    display: none;
+    width: 35px;
+    height: 27px;
+}
+
+.container-navbar .navbar .ul .list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    text-decoration: none;
+}
+
+.container-navbar .navbar .ul .active {
+    font-family: 'Inter-Bold', sans-serif;
+}
+
+.container-navbar .navbar .ul .list p {
+    margin-bottom: 0px;
+    color: #06A3DA;
+}
+
+.container-navbar .title {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #F6FEFF;
+}
+
+.container-navbar .title h1 {
+    font-family: 'Inter-Bold', sans-serif;
+    font-size: 52px;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+}
+
+.container-navbar .title p {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+
+.container-navbar img {
+    width: 100%;
+    height: 100%;
+}
+/* End Navbar Section */
+
+@media screen and (max-width: 930px) {
+    /* Start Navbar Section */
+    .container-navbar .navbar .logo {
+        width: 160px;
+        height: 47px;
+    }
+
+    .container-navbar .navbar .ul {
+        width: 100%;
+        height: auto;
+        gap: 0px;
+        top: -500px;
+        left: 0;
+        position: absolute;
+        flex-direction: column;
+        background-color: #091E3E;
+        border-radius: 8px;
+    }
+    
+    #ul-navbar {
+        /* display: none; */
+        transition: 1s ease;
+    }
+    
+    #ul-navbar.show {
+        top: 90px;
+        transition: 1s ease;
+        display: flex;
+    }
+
+    .container-navbar .navbar .ul .list {
+        width: 100%;
+        padding: 8px 0px;
+    }
+
+    .container-navbar .navbar .ul .active img {
+        display: none;
+    }
+
+    .container-navbar .navbar .ul .list:hover {
+        background-color: #061429;
+    }
+
+    .container-navbar .navbar .hamburger {
+        display: block;
+    }
+    /* End Navbar Section */
+}
