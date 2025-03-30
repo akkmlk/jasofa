@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style/contact.css">
     <link rel="stylesheet" href="style/navbar.css">
     <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <div class="container-navbar">
@@ -51,28 +52,28 @@
             </div>
             <div class="location-wrapper">
                 <div class="location">
-                    <div class="description">
+                    <div class="description" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50">
                         <img src="asset/ct-phone.svg" alt="Phone Icon">
                         <div class="detail">
                             <p class="detail-title">Telepon</p>
                             <p>+62 895-0512-0447</p>
                         </div>
                     </div>
-                    <div class="description">
+                    <div class="description" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
                         <img src="asset/ct-instagram.svg" alt="Instagram Icon">
                         <div class="detail">
                             <p class="detail-title">Instagram</p>
                             <p>@ajhsga</p>
                         </div>
                     </div>
-                    <div class="description">
+                    <div class="description" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">
                         <img src="asset/ct-whatsapp.svg" alt="Whatsapp Icon">
                         <div class="detail">
                             <p class="detail-title">Whatsapp</p>
                             <p>+62 895-0512-0447</p>
                         </div>
                     </div>
-                    <div class="description">
+                    <div class="description" data-aos="fade-up" data-aos-duration="700" data-aos-delay="400">
                         <img src="asset/ct-maps.svg" alt="Map Icon">
                         <div class="detail">
                             <p class="detail-title">Alamat</p>
@@ -171,5 +172,9 @@
     
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/navbar.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
