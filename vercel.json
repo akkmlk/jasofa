@@ -1,8 +1,15 @@
 {
-  "rewrites": [
-    {
-      "source": "/",
-      "destination": "views/home.html"
-    }
-  ]
+    "version": 2,
+    "builds": [
+        {
+            "src": "views/*.html",
+            "use": "@vercel/static"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/public/(.*)",
+            "dest": "/public/$1"
+        }
+    ]
 }
