@@ -9,138 +9,10 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="style/body.css">
     <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="style/review.css">
     <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!-- Swiper JS CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <style>
-        /* Testimonials Section */
-        .testimonials-section {
-            padding: 80px 0;
-            background-color: #f8f9fa;
-            text-align: center;
-        }
-        
-        .testimonials-title h2 {
-            font-size: 32px;
-            margin-bottom: 15px;
-            color: #333;
-        }
-        
-        .testimonials-title p {
-            max-width: 800px;
-            margin: 0 auto 50px;
-            color: #6c757d;
-            font-size: 16px;
-        }
-        
-        .swiper {
-            width: 100%;
-            padding: 30px 0 60px;
-        }
-        
-        .testimonial-card {
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-            padding: 30px;
-            margin: 0 20px;
-            text-align: left;
-            transition: all 0.3s ease;
-        }
-        
-        .testimonial-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-        }
-        
-        .testimonial-text {
-            font-style: italic;
-            margin-bottom: 25px;
-            color: #555;
-            line-height: 1.6;
-            position: relative;
-        }
-        
-        .testimonial-text::before {
-            content: '"';
-            font-size: 60px;
-            color: #f1f1f1;
-            position: absolute;
-            left: -15px;
-            top: -30px;
-            z-index: 0;
-        }
-        
-        .client-info {
-            display: flex;
-            align-items: center;
-        }
-        
-        .client-avatar {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-right: 15px;
-            border: 3px solid #e9ecef;
-        }
-        
-        .client-details h4 {
-            margin: 0;
-            color: #333;
-            font-size: 18px;
-        }
-        
-        .client-details p {
-            margin: 5px 0 0;
-            color: #6c757d;
-            font-size: 14px;
-        }
-        
-        .swiper-pagination-bullet {
-            width: 12px;
-            height: 12px;
-            background: #ddd;
-            opacity: 1;
-        }
-        
-        .swiper-pagination-bullet-active {
-            background: #4e9cff;
-        }
-        
-        .swiper-button-next, 
-        .swiper-button-prev {
-            color: #4e9cff;
-            background: rgba(255,255,255,0.8);
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        
-        .swiper-button-next::after, 
-        .swiper-button-prev::after {
-            font-size: 20px;
-            font-weight: bold;
-        }
-        
-        @media (max-width: 768px) {
-            .testimonials-section {
-                padding: 60px 0;
-            }
-            
-            .testimonial-card {
-                margin: 0 10px;
-                padding: 20px;
-            }
-            
-            .swiper-button-next, 
-            .swiper-button-prev {
-                display: none;
-            }
-        }
-    </style>
 </head>
 <body>
     <div class="container-navbar">
@@ -441,16 +313,10 @@
     <script src="js/home.js"></script>
     <script src="js/navbar.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    
     <script>
-        // Initialize AOS
         AOS.init();
-        
         // Initialize Swiper
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 1,
