@@ -5,6 +5,7 @@
     max-height: 1117px;
     padding: 0px;
     position: relative;
+    z-index: 1;
 }
 
 .container-navbar .navbar {
