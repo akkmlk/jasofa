@@ -60,7 +60,7 @@
     row-gap: 20px;
 }
 
-.container-services .service h1 {
+.container-services .service h2 {
     font-family: 'Inter-Bold', sans-serif;
     font-size: 26px;
     font-weight: bold;
@@ -124,6 +124,7 @@
 
 .container-services .service .service-wrapper .description-wrapper .description .range-price {
     font-size: 20px;
+    font-weight: bold;
 }
 
 .container-services .service .service-wrapper .description-wrapper .btn-detail-price {
@@ -134,7 +135,7 @@
     text-align: center;
     text-decoration: none;
     color: #073145;
-    font-weight: bold;
+    font-weight: normal;
     border-radius: 8px;
     transition: .2s ease-in-out;
 }
