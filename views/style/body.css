@@ -17,6 +17,7 @@
 }
 
 body {
+    overflow-x: hidden;
     background-color: #F6FEFF;
     margin: 0px;
     padding: 0px;
@@ -25,6 +26,12 @@ body {
     display: flex;
     flex-direction: column;
     gap: 100px;
+    -ms-overflow-style: none;  /* IE and Edge */
+    /* scrollbar-width: none; */
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 /* Start Body Section */
