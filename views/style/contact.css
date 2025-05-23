@@ -63,9 +63,11 @@
     font-family: 'Inter-Bold', sans-serif;
 }
 
-.container-location .location-wrapper .location .description .detail p {
+.container-location .location-wrapper .location .description .detail p,
+.container-location .location-wrapper .location .description .detail a {
     color: #073145;
     margin-bottom: 0px;
+    text-decoration: none;
 }
 
 .container-location .location-wrapper .maps {
